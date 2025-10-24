@@ -391,7 +391,7 @@ export default function ClothingStore() {
                 <p>
                   Para cualquier duda o aclaración sobre este aviso de privacidad, contáctenos en:<br />
                   Email: privacidad@ecostyle.com<br />
-                  Teléfono: [Número de contacto]
+                  
                 </p>
               </section>
 
