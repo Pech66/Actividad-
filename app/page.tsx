@@ -5,7 +5,7 @@ import { ShoppingCart, Heart, Star, Search, Menu, X } from 'lucide-react';
 
 export default function ClothingStore() {
   const [cartItems, setCartItems] = useState(0);
-  const [favorites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState<number[]>([]);
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [showPrivacyModal, setShowPrivacyModal] = useState(false);
   const [email, setEmail] = useState('');
@@ -67,7 +67,7 @@ export default function ClothingStore() {
     ? products
     : products.filter(p => p.category === selectedCategory);
 
-  const toggleFavorite = (id) => {
+  const toggleFavorite = (id: number) => {
     setFavorites(prev =>
       prev.includes(id) ? prev.filter(fav => fav !== id) : [...prev, id]
     );
@@ -77,7 +77,7 @@ export default function ClothingStore() {
     setCartItems(prev => prev + 1);
   };
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     if (!acceptedPrivacy) {
       alert('Debes aceptar el Aviso de Privacidad');
@@ -169,8 +169,8 @@ export default function ClothingStore() {
                 key={cat.id}
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`whitespace-nowrap rounded-full px-6 py-2 font-medium transition-all ${selectedCategory === cat.id
-                    ? 'bg-primary text-white'
-                    : 'bg-zinc-100 text-foreground hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700'
+                  ? 'bg-primary text-white'
+                  : 'bg-zinc-100 text-foreground hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700'
                   }`}
               >
                 {cat.name}
@@ -209,8 +209,8 @@ export default function ClothingStore() {
                   >
                     <Heart
                       className={`h-5 w-5 transition-colors ${favorites.includes(product.id)
-                          ? 'fill-primary text-primary'
-                          : 'text-zinc-600'
+                        ? 'fill-primary text-primary'
+                        : 'text-zinc-600'
                         }`}
                     />
                   </button>
@@ -227,8 +227,8 @@ export default function ClothingStore() {
                       <Star
                         key={i}
                         className={`h-4 w-4 ${i < Math.floor(product.rating)
-                            ? 'fill-primary text-primary'
-                            : 'text-zinc-300'
+                          ? 'fill-primary text-primary'
+                          : 'text-zinc-300'
                           }`}
                       />
                     ))}
