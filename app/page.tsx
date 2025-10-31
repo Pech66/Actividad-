@@ -354,7 +354,7 @@ export default function ClothingStore() {
                 <h4 className="font-semibold text-foreground mb-2">4. Derechos ARCO</h4>
                 <p>
                   Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales.
-                  Para ejercer estos derechos, contáctenos en: privacidad@ecostyle.com
+                  Para ejercer estos derechos, contáctenos en: pechmoises@ecostyle.com
                 </p>
               </section>
 
@@ -390,7 +390,7 @@ export default function ClothingStore() {
                 <h4 className="font-semibold text-foreground mb-2">9. Contacto</h4>
                 <p>
                   Para cualquier duda o aclaración sobre este aviso de privacidad, contáctenos en:<br />
-                  Email: privacidad@ecostyle.com<br />
+                  Email: pechmoises@ecostyle.com<br />
                   
                 </p>
               </section>
