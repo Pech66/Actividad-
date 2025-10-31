@@ -330,7 +330,7 @@ export default function ClothingStore() {
                 <h4 className="font-semibold text-foreground mb-2">1. Responsable del Tratamiento</h4>
                 <p>
                   EcoStyle, con domicilio en Carretera Cancún-Aeropuerto, S.M 299-Km. 11.5, 77565 Q.R.
-                  , es responsable del tratamiento de sus datos personales.
+                  , es responsable del tratamiento de sus datos personales es Pech López moisés de Jesús.
                 </p>
               </section>
 
