@@ -316,88 +316,106 @@ export default function ClothingStore() {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
           <div className="card max-w-2xl max-h-[80vh] overflow-y-auto bg-card">
             <div className="mb-4 flex items-center justify-between">
-              <h3 className="text-2xl font-bold text-foreground">Aviso de Privacidad</h3>
+              <h3 className="text-2xl font-bold text-foreground text-center w-full">
+                Aviso de Privacidad
+              </h3>
               <button
                 onClick={() => setShowPrivacyModal(false)}
-                className="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors"
+                className="p-2 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-full transition-colors absolute right-4 top-4"
               >
                 <X className="h-6 w-6" />
               </button>
             </div>
 
-            <div className="space-y-4 text-sm text-zinc-600 dark:text-zinc-400">
+            <div className="space-y-5 text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
               <section>
-                <h4 className="font-semibold text-foreground mb-2">1. Responsable del Tratamiento</h4>
-                <p>
-                  EcoStyle, con domicilio en Carretera Cancún-Aeropuerto, S.M 299-Km. 11.5, 77565 Q.R.
-                  , es responsable del tratamiento de sus datos personales es Pech López moisés de Jesús.
+                
+                <p className="mt-3">
+                  <strong>EcoStyle</strong> es responsable del uso y protección de sus datos personales, y al respecto le informa lo siguiente:
+
                 </p>
               </section>
 
               <section>
-                <h4 className="font-semibold text-foreground mb-2">2. Datos Personales Recabados</h4>
+                <h4 className="font-semibold text-foreground mb-2">1. Responsable del tratamiento de los datos personales</h4>
                 <p>
-                  Recopilamos su correo electrónico para enviarle información sobre nuestros productos, promociones y novedades relacionadas con moda sostenible.
+                  <strong>EcoStyle</strong>, con domicilio en Carretera Cancún–Aeropuerto, S.M. 299, Km. 11.5, Cancún, Q.R., es responsable del tratamiento de los datos personales que usted proporcione.
                 </p>
               </section>
 
               <section>
-                <h4 className="font-semibold text-foreground mb-2">3. Finalidad del Tratamiento</h4>
-                <ul className="list-disc list-inside space-y-1">
-                  <li>Envío de newsletter y promociones</li>
-                  <li>Información sobre nuevos productos eco-friendly</li>
-                  <li>Comunicaciones relacionadas con sostenibilidad</li>
+                <h4 className="font-semibold text-foreground mb-2">2. Datos personales recabados</h4>
+                <p>
+                  Los datos personales que recabamos incluyen su nombre completo y correo electrónico, los cuales serán utilizados para los fines descritos en el presente aviso.
+                </p>
+              </section>
+
+              <section>
+                <h4 className="font-semibold text-foreground mb-2">3. Finalidad del tratamiento</h4>
+                <p>
+                  Los datos personales que recabamos serán utilizados para las siguientes finalidades primarias:
+                </p>
+                <ul className="list-disc list-inside mt-2 space-y-1">
+                  <li>Proporcionar información sobre nuestros productos y servicios sostenibles.</li>
+                  <li>Enviar promociones, newsletters y contenido informativo.</li>
+                  <li>Mantener comunicación sobre actualizaciones relacionadas con moda ecológica.</li>
                 </ul>
+                <p className="mt-2">
+                  De manera adicional, podremos utilizar su información para fines estadísticos o de mejora del servicio, siempre respetando la confidencialidad de sus datos.
+                </p>
               </section>
 
               <section>
                 <h4 className="font-semibold text-foreground mb-2">4. Derechos ARCO</h4>
-                <p>
-                  Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos personales.
-                  Para ejercer estos derechos, contáctenos en: pechmoises@ecostyle.com
+              
+                <p className="mt-2">
+                  Para ejercer estos derechos, puede comunicarse con nuestro Departamento de Privacidad al correo electrónico:{" "}
+                  <strong>privacidad@ecostyle.com</strong>.
+ 
                 </p>
               </section>
 
               <section>
-                <h4 className="font-semibold text-foreground mb-2">5. Transferencia de Datos</h4>
+                <h4 className="font-semibold text-foreground mb-2">5. Transferencia de datos personales</h4>
                 <p>
-                  No compartimos sus datos personales con terceros sin su consentimiento expreso, excepto cuando sea requerido por ley.
+                  Sus datos personales no serán compartidos con terceros sin su consentimiento, salvo en los casos expresamente previstos por la ley.
                 </p>
               </section>
 
               <section>
-                <h4 className="font-semibold text-foreground mb-2">6. Seguridad</h4>
+                <h4 className="font-semibold text-foreground mb-2">6. Medidas de seguridad</h4>
                 <p>
-                  Implementamos medidas de seguridad técnicas y administrativas para proteger sus datos personales contra acceso no autorizado.
+                  Implementamos medidas administrativas, técnicas y físicas necesarias para proteger su información personal contra daño, pérdida, alteración, destrucción o uso no autorizado.
                 </p>
               </section>
 
               <section>
-                <h4 className="font-semibold text-foreground mb-2">7. Cookies y Tecnologías</h4>
+                <h4 className="font-semibold text-foreground mb-2">7. Uso de cookies</h4>
                 <p>
-                  Utilizamos cookies para mejorar su experiencia de navegación. Puede configurar su navegador para rechazar cookies.
+                  Nuestro sitio web utiliza cookies para mejorar su experiencia de navegación. Usted puede deshabilitarlas ajustando la configuración de su navegador.
                 </p>
               </section>
 
               <section>
-                <h4 className="font-semibold text-foreground mb-2">8. Modificaciones</h4>
+                <h4 className="font-semibold text-foreground mb-2">8. Cambios al aviso de privacidad</h4>
                 <p>
-                  Nos reservamos el derecho de actualizar este aviso de privacidad. Las modificaciones serán publicadas en nuestro sitio web.
+                  Este aviso puede ser modificado o actualizado. Cualquier cambio será publicado en nuestro sitio web oficial:{" "}
+                  <strong>www.ecostyle.com</strong>.
                 </p>
               </section>
 
               <section>
                 <h4 className="font-semibold text-foreground mb-2">9. Contacto</h4>
                 <p>
-                  Para cualquier duda o aclaración sobre este aviso de privacidad, contáctenos en:<br />
-                  Email: pechmoises@ecostyle.com<br />
-                  
+                  <strong>Email:</strong> privacidad@ecostyle.com
                 </p>
               </section>
 
-              <p className="text-xs mt-4 pt-4 border-t border-border">
+              <p className="text-xs mt-6 pt-4 border-t border-border text-center">
                 Última actualización: Octubre 2025
+                Autor: Pech Lopez Moises de Jesus
               </p>
+
             </div>
 
             <div className="mt-6 flex justify-end gap-3">
